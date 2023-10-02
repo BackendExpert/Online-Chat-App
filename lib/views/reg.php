@@ -17,10 +17,13 @@
                         <p>Password : </p>
                         <input type="password" name="password" id="" class="form-control" placeholder="Password"></p>
 
-                        <input type="submit" value="Login" class="btn btn-primary">
+                        <p>Confirm Password : </p>
+                        <input type="password" name="cpassword" id="" class="form-control" placeholder="Confirm Password"></p>
+
+                        <input type="submit" value="Sign Up" class="btn btn-primary">
                     </form>
                     <br>
-                    <p>Don't have an Account ? <a href="../../index.php">Create One</a></p>
+                    <p>Don't have an Account ? <a href="../../index.php">Sign In</a></p>
                 </div>
             </div>
         </div>
