@@ -11,7 +11,7 @@
                 <div class="card-header">
                     <i class="fas fa-user-alt"></i>  Login Here
                 </div>
-                <div class="card-body">
+                <div class="card-body login-body">
                     <form action="<?php echo($_SERVER["PHP_SELF"]); ?>" method="POST">
                         <p>Username : </p>
                         <input type="text" name="username" id="" class="form-control" placeholder="Username"></p>
