@@ -18,6 +18,8 @@
 
                         <p>Password : </p>
                         <input type="password" name="password" id="" class="form-control" placeholder="Password"></p>
+
+                        <input type="submit" value="Login" class="btn btn-primary">
                     </form>
                 </div>
             </div>
