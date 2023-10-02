@@ -12,7 +12,13 @@
                     <i class="fas fa-user-alt"></i>  Login Here
                 </div>
                 <div class="card-body">
-                    <form action="<?php echo($_SERVER["PHP_SELF"]); ?>" method="POST"></form>
+                    <form action="<?php echo($_SERVER["PHP_SELF"]); ?>" method="POST">
+                        <p>Username : </p>
+                        <input type="text" name="username" id="" class="form-control" placeholder="Username"></p>
+
+                        <p>Password : </p>
+                        <input type="password" name="password" id="" class="form-control" placeholder="Password"></p>
+                    </form>
                 </div>
             </div>
         </div>
