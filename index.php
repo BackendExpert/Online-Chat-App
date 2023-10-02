@@ -9,7 +9,7 @@
         <div class="col-lg-4">
             <div class="card login-card">
                 <div class="card-header">
-                    <i class="fas fa-user-alt"></i>  Login Here
+                    <i class="fas fa-user-lock"></i>  Login Here
                 </div>
                 <div class="card-body login-body">
                     <form action="<?php echo($_SERVER["PHP_SELF"]); ?>" method="POST">
