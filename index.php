@@ -12,7 +12,7 @@
                     <i class="fas fa-user-alt"></i>  Login Here
                 </div>
                 <div class="card-body">
-                    Login
+                    <form action="<?php echo($_SERVER["PHP_SEFL"]); ?>" method="POST"></form>
                 </div>
             </div>
         </div>
