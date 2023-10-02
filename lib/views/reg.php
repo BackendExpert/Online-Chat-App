@@ -12,16 +12,16 @@
                 <div class="card-body login-body">
                     <form action="<?php echo($_SERVER["PHP_SELF"]); ?>" method="POST">
                         <p>Username : </p>
-                        <input type="text" name="username" id="" class="form-control" placeholder="Username"></p>
+                        <input type="text" name="username" id="" class="form-control" placeholder="Username" required></p>
 
                         <p>Email : </p>
-                        <input type="email" name="email" id="" class="form-control" placeholder="Email"></p>
+                        <input type="email" name="email" id="" class="form-control" placeholder="Email" required></p>
 
                         <p>Password : </p>
-                        <input type="password" name="password" id="" class="form-control" placeholder="Password"></p>
+                        <input type="password" name="password" id="" class="form-control" placeholder="Password" required></p>
 
                         <p>Confirm Password : </p>
-                        <input type="password" name="cpassword" id="" class="form-control" placeholder="Confirm Password"></p>
+                        <input type="password" name="cpassword" id="" class="form-control" placeholder="Confirm Password" required></p>
 
                         <input type="submit" value="Sign Up" class="btn btn-primary">
                     </form>
