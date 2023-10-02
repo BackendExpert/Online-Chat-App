@@ -14,6 +14,9 @@
                         <p>Username : </p>
                         <input type="text" name="username" id="" class="form-control" placeholder="Username"></p>
 
+                        <p>Email : </p>
+                        <input type="email" name="email" id="" class="form-control" placeholder="Email"></p>
+
                         <p>Password : </p>
                         <input type="password" name="password" id="" class="form-control" placeholder="Password"></p>
 
