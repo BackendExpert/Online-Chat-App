@@ -47,7 +47,12 @@
                     </div>";
                 }
             }
-        }
+        }        
+    }
+
+    function sign_in($username, $pass){
+        $con = Connection();
+
         
     }
 
