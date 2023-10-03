@@ -19,7 +19,7 @@
                     </div>";
         }
         else{
-            $check_user = "SELECT * FROM user_tbl WHERE username = '$username' && email = '$email";
+            $check_user = "SELECT * FROM user_tbl WHERE email = '$email'";
             $check_user_result = mysqli_query($con, $check_user);
             $check_user_nor = mysqli_num_rows($check_user_result);
             $check_user_row = mysqli_fetch_assoc($check_user_result);
@@ -32,6 +32,14 @@
             }
 
             else{
+
+                if($check_user_row['username'] != $username){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Usssssssssssssssssser : </strong> already exists...!
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+            </div>";
+                }
+
                 $insert_user = "INSERT INTO user_tbl(username,email,pass,user_type,is_active,join_at)VALUES('$username','$email','$pass','user',1,NOW())";
                 $insert_user_result = mysqli_query($con, $insert_user);
 
