@@ -58,12 +58,12 @@
 
         if($check_login_user_nor > 0){
             if($pass == $check_login_user_row['pass']){
-                if(($check_login_user_row['roll'] == 'user')){
+                if(($check_login_user_row['user_type'] == 'user')){
                     setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
                     $_SESSION['loginSession'] = $check_login_user_row['email'];
                     header("location:../routes/user.php");
                 }
-                elseif($check_login_user_row['roll'] == 'admin'){
+                elseif($check_login_user_row['user_type'] == 'admin'){
                     setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
                     $_SESSION['loginSession'] = $check_login_user_row['email'];
                     header("location:../routes/admin.php");
