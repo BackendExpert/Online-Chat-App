@@ -6,8 +6,9 @@
     function sign_up($username, $email, $pass, $cpass){
         $con = Connection();
 
-        echo $username;
-
+        if($pass != $cpass){
+            
+        }
 
     }
 
