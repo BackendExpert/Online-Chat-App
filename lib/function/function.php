@@ -51,38 +51,34 @@
     function sign_in($username, $pass){
         $con = Connection();
 
-        $check_user = "SELECT * FROM user_tbl WHERE username = '$username' && pass = '$pass' && is_active = 1";
-        $check_user_result = mysqli_query($con, $check_user);
-        $check_user_nor = mysqli_num_rows($check_user_result);
-        $check_user_row = mysqli_fetch_array($check_user_result);
+        $check_login_user = "SELECT * FROM user_tbl WHERE username = '$username' && pass = '$pass'";
+        $check_login_user_result = mysqli_query($con, $check_login_user);
+        $check_login_user_nor = mysqli_num_rows($check_login_user_result);
+        $check_login_user_row = mysqli_fetch_assoc($check_login_user_result);
 
-        if($check_user_row['username'] != $username){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>ERROR : </strong> 
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                    </div>";
-        }
-
-        if($check_user_nor != 0){
-            if($check_user_row['user_type'] == 'user'){
-                setcookie('login',$check_user_row['email'],time()+60*60,'/');
-                $_SESSION['LoginSession'] = $check_user_row['email'];
-                header("location:lib/routes/user.php");  
+        if($check_login_user_nor > 0){
+            if($pass == $check_login_user_row['pass']){
+                if(($check_login_user_row['roll'] == 'user')){
+                    setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
+                    $_SESSION['loginSession'] = $check_login_user_row['email'];
+                    header("location:../routes/user.php");
+                }
+                elseif($check_login_user_row['roll'] == 'admin'){
+                    setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
+                    $_SESSION['loginSession'] = $check_login_user_row['email'];
+                    header("location:../routes/admin.php");
+                }
             }
-            if($check_user_row['user_type'] == 'admin'){
-                setcookie('login',$check_user_row['email'],time()+60*60,'/');
-                $_SESSION['LoginSession'] = $check_user_row['email'];
-                header("location:lib/routes/admin.php");  
+            else{
+                return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>Password is Doesn't Match...!</div>&nbsp</center>"; 
             }
-        }else{
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>User : </strong> Does not exists...!
-                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-            </div>";
         }
-
+        else{
+            return "<center>&nbsp<div class='alert alert-danger col-10' role='alert'>No recodes found..!</div>&nbsp</center>"; 
+        }
 
     }
+
 
 
 ?>
