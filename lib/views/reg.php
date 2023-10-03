@@ -2,6 +2,7 @@
 
 <link rel="stylesheet" href="../../css/style.css">
 
+<div class="container">
 <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
@@ -31,5 +32,6 @@
             </div>
         </div>
         <div class="col-lg-4"></div>
+</div>
 </div>
 
