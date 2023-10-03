@@ -7,7 +7,10 @@
         $con = Connection();
 
         if($pass != $cpass){
-            
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Password Error!</strong> Password and Confirm Password not Match...!
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>";
         }
 
     }
