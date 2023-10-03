@@ -3,10 +3,10 @@
     use FTP\Connection;
     session_start();
 
-    function sign_up($user_name,$user_email,$user_pass,$c_pass){
+    function sign_up($username, $email, $pass, $cpass){
         $con = Connection();
 
-        echo $user_name;
+        echo $username;
 
 
     }
