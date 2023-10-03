@@ -12,6 +12,9 @@
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                     </div>";
         }
+        else{
+            $select_user = "SELECT * FROM user_tbl WHERE username = '$username' || email = '$email";
+        }
 
     }
 
