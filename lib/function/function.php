@@ -32,7 +32,6 @@
 
             else{
 
-
                 $insert_user = "INSERT INTO user_tbl(username,email,pass,user_type,is_active,join_at)VALUES('$username','$email','$pass','user',1,NOW())";
                 $insert_user_result = mysqli_query($con, $insert_user);
 
