@@ -8,8 +8,8 @@
 
         if($pass != $cpass){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>Password Error!</strong> Password and Confirm Password not Match...!
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        <strong>Password Error!</strong> Password and Confirm Password not Match...!
+                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                     </div>";
         }
         else{
@@ -19,8 +19,8 @@
 
             if($select_user_nor < 0){
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                                <strong>SignUp Error!</strong> User Already Exists...!
-                                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                            <strong>SignUp Error!</strong> User Already Exists...!
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                         </div>";
             }
             else{
