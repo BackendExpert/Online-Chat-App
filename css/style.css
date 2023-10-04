@@ -7,3 +7,6 @@
 .main-card{
     margin: 80px 150px;
 }
+.main-card .header-card{
+    background-color: blue;
+}
