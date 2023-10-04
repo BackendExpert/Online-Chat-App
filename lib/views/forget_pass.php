@@ -17,6 +17,7 @@
                     ?>
 
                     <form action="<?php echo($_SERVER["PHP_SELF"]); ?>" method="POST">
+                        <h5>Enter Email Address</h5>
                         <p>Email : </p>
                         <input type="email" name="email" id="" class="form-control" placeholder="Email" required></p>
 
