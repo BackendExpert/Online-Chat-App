@@ -5,8 +5,9 @@
     padding: 40px 50px;
 }
 .main-card{
-    margin: 80px 150px;
+    margin: 40px 150px;
 }
 .main-card .header-card{
     background-color: blue;
+    padding: 40px 50px;
 }
