@@ -8,5 +8,8 @@
         <div class="header-card">
             Name : JehanKnady
         </div>
+        <div class="user-pimg">
+            <img src="https://www.flaticon.com/free-icon/user_456212" alt="">
+        </div>
     </div>
 </div>
