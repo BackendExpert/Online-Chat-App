@@ -9,7 +9,7 @@
             Name : JehanKnady
         </div>
         <div class="user-pimg">
-            <img src="https://www.flaticon.com/free-icon/user_456212" alt="">
+            <img src="https://avatars.githubusercontent.com/u/138636749?v=4" alt="" class="user-img">
         </div>
     </div>
 </div>
