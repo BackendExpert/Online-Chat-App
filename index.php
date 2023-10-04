@@ -10,7 +10,7 @@
         <div class="col-lg-4">
             <div class="card login-card">
                 <div class="card-header">
-                    <h4><i class="fas fa-user-shield"></i>  Password Reset</h4>
+                    <h4><i class="fas fa-user-lock"></i>  Sign In Here</h4>
                 </div>
                 <div class="card-body login-body">
                     <?php 
