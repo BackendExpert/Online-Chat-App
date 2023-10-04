@@ -29,6 +29,7 @@
 
                         <input type="submit" value="Sign In" class="btn btn-primary" name="signin">
                     </form>
+                    <a href="">Forget Password?</a>
                     <br>
                     <p>Don't have an Account ? <a href="lib/views/reg.php">Sign Up</a></p>
                 </div>
